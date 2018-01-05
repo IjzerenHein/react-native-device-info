@@ -29,8 +29,8 @@ declare const _default: {
   getFirstInstallTime: () => number;
   getLastUpdateTime: () => number;
   getSerialNumber: () => string;
-  getIPAddress: () => Promise<string>
-  getMACAddress: () => Promise<string>
+  getIPAddress: () => Promise<string>;
+  getMACAddress: () => Promise<string>;
   getPhoneNumber: () => string;
   getAPILevel: () => number;
   getCarrier: () => string;
@@ -38,7 +38,8 @@ declare const _default: {
   getMaxMemory: () => number;
   getTotalDiskCapacity: () => number;
   getFreeDiskStorage: () => number;
-  getBatteryLevel: () => Promise<number>
+  getBatteryLevel: () => Promise<number>;
+  getUsedMemory: () => Promise<number>;
 };
 
 export default _default;
