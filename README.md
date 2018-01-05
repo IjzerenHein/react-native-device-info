@@ -196,6 +196,7 @@ var DeviceInfo = require('react-native-device-info');
 | Carrier                    | `getCarrier()`                     | `string` e.g. "SOFTBANK"                                                                      |                                                                                                                     |
 | Total Memory               | `getTotalMemory()`                 | `number` e.g. 1995018240                                                                      | Total ammount of memory on the device                                                                               |
 | Max Memory                 | `getMaxMemory()`                   | `number` e.g. 268435456                                                                       | ANDROID ONLY - see https://developer.android.com/reference/java/lang/Runtime.html#maxMemory()                       |
+| Used Memory                | `getUsedMemory()`                  | `Promise<number>` e.g. 268435456                                                              | Memory in-use by the app (example. `const memUsage = await DeviceInfo.getUsedMemory()`)                             |
 
 Since the device setting for PIN/Fingerprint can be modified while the app is still open, this is available via callback instead of as a constant.  To use, pass a callback function to the returned bridge function in your javascript:
 

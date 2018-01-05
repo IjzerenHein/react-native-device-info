@@ -98,4 +98,7 @@ module.exports = {
   getMaxMemory: function() {
     return RNDeviceInfo.maxMemory;
   },
+  getUsedMemory: function() {
+    return RNDeviceInfo.getUsedMemory();
+  },
 };
