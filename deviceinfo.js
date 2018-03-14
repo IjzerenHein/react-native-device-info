@@ -101,4 +101,7 @@ module.exports = {
   getUsedMemory: function() {
     return RNDeviceInfo.getUsedMemory();
   },
+  getCPUUsage: function() {
+    return RNDeviceInfo.getCPUUsage();
+  },
 };

@@ -32,5 +32,6 @@ declare module.exports: {
   getCarrier: () => string,
   getTotalMemory: () => number,
   getMaxMemory: () => number,
-  getUsedMemory: () => number,
+  getUsedMemory: () => Promise<number>,
+  getCPUUsage: () => Promise<number>,
 }
