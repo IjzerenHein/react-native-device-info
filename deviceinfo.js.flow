@@ -40,5 +40,5 @@ declare module.exports: {
   getTotalDiskCapacity: () => number,
   getFreeDiskStorage: () => number,
   getBatteryLevel: () => Promise<number>,
-  getUsedMemory: () => number
+  getUsedMemory: () => Promise<number>
 };
